@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="br-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <title>Login</title>
+</head>
+<body>
+    <div class="container">
+        <form id="loginForm">
+            <div class="input-container">
+                <i class="fas fa-user"></i>
+                <input type="text" id="username" placeholder="Nome de Usuário" required>
+            </div>
+            <span id="usernameError" class="error-message"></span>
+
+            <div class="input-container">
+                <i class="fas fa-lock"></i>
+                <input type="password" id="password" placeholder="Senha" required>
+            </div>
+            <span id="passwordError" class="error-message"></span>
+
+            <div id="errorContainer" class="error-container"></div>
+
+            <button type="submit">Entrar</button>
+            
+            <button id="facebookLoginBtn">
+                <i class="fab fa-facebook-f"></i> Login com Facebook
+            </button>
+            
+            <button id="googleLoginBtn">
+                <i class="fab fa-google"></i> Login com Google
+            </button>
+
+            <div class="links">
+                <a href="#" class="forgot-password-link">Esqueceu sua senha?</a>
+                <a href="#" class="create-account-link">Criar uma conta</a>
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
